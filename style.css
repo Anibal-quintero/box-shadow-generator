@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+}
+.wraper {
+    padding: 2em 1em;
+    background-color: #262626;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    gap: 1em;
+}
+.content_values {
+    width:30em;
+    box-sizing: border-box;
+}
+.wraper label {
+    display: block;
+    color: white;
+    margin: 1.5em 0 0.13em 0;
+    width: 100%;
+    font-size: 1.1rem;
+}
+.wraper .mgn {
+    margin-top: 1.3px;
+}
+/* Estilizar el borde del control deslizante (opcional) */
+.wraper input {
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    padding: 0.1em 0;
+    cursor: pointer;
+    width: 100%; 
+    background-color: rgb(0, 0, 0);
+}
+input[type="color"] {
+    padding: 0;    
+    border: 2px solid white;
+    height: 5.3em; 
+    border-radius: 5px;
+}
+.wraper input::-moz-range-thumb {
+    background-color: #ffffff; /* Color del pulgar en Firefox */
+    font-size: 1.2rem;
+    border: none;
+}
+.wraper input::-ms-thumb {
+    background-color: #ffffff; /* Color del pulgar en navegadores Microsoft (IE y Edge) */
+    font-size: 1.2rem;
+    border: none;
+}
+.wraper_one {
+    border: 1px solid #fff;
+    border-radius:0.2em;
+    width: 100%;
+    height: 35.2em;
+    padding: 2em;
+    position: relative;
+}
+.content_box {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.values {
+    display: flex;
+    flex-direction: column;
+}
+.values ul {
+    list-style: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    position: absolute;
+    bottom: 1em;
+}
+.values li {
+    margin-bottom: 1em;
+    width: 12em;
+    color: white;
+}
+.values .large {
+    width: 100%;
+}
+.copyright {
+    position: fixed;
+    bottom: 0;
+    color: rgba(255, 255, 255, 0.663);
+    margin-top: 0;
+}
+@media (max-width: 682px) {
+    .wraper {
+        display: block;
+        overflow: auto;
+        padding: 1em 1em;
+    }
+    .content_values {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .wraper_one {
+        height: 25em;
+        padding: 1em;
+        margin-top: 6em; 
+        border: none;
+    }
+    .content_box {
+        top: 7em;
+        left: auto;
+        right: 4em;
+        width: 1em;
+    }
+    .wraper label {
+        margin-top: 0.5em;
+    }
+    input[type='color'] {
+        height: 3em;
+        margin-bottom: 0.5em;
+    }
+    .content_box {
+        width: 5em;
+        height: 5em;
+    }
+    .copyright {
+        display: none;
+    }
+}

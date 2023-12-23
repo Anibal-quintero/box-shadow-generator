@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/98345.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="code.js" defer></script>
+    <title> Shadow Generator</title>
+</head>
+<body>
+    <div class="wraper">
+        <div class="content_values">
+            <label class="mgn">Size</label>
+            <input type="range" id="Tamaño" min="50" max="100" value="0">
+
+            <label>Border-radius</label>
+            <input type="range" id="border-radius" min="0" max="100" value="0">
+
+
+            <label>Displacement X</label>
+            <input type="range" id="D-X" min="-100" max="100" value="0">
+
+            <label>Displacement Y</label>
+            <input type="range" id="D-Y" min="-100" max="100" value="0">
+
+            <label>Blur</label>
+            <input type="range" id="desenfoque" min="0" max="100" value="0">
+
+            <label>Spread Radius</label>
+            <input type="range" id="extencion" min="0" max="100" value="0">
+
+            <label>Shadow color</label>
+            <input type="color" id="color" value="#0fff09">
+        </div>
+        <div class="wraper_one">
+            <div class="content_box">
+                <!-- elemento de caja  -->
+            </div>
+            <div class="values">
+                <ul>
+                    <li>width: <span id="widthValue">0px;</span></li>
+                    <li>height: <span id="heightValue">0px;</span></li>
+                    <li>border-radius: <span id="borderValue">0px;</span></li>
+                    <li class="large">box-shadow: <span id="boxShadowValue">0px 0px 0px 0px #0fff09;</span></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">© 2023 Anibal Meza Quintero</p>
+    </div>
+</body>
+</html>
